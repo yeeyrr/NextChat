@@ -251,7 +251,7 @@ DeepSeek Api Url.
 
 ### `DEFAULT_MODEL` （可选）
 
-更改默认模型
+更改默认模型，必须先用在'CUSTOM_MODELS'中用'-'注释掉默认的大模型，否则这个选项无效。例：-gpt-4o-mini,+你要设置的默认模型(模型列表中没有才要+，否则只需-删除掉即可)
 
 ### `VISION_MODELS` (可选)
 
