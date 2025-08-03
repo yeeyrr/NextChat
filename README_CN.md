@@ -93,6 +93,10 @@ code1,code2,code3
 
 ## 环境变量
 
+## 个人部署经验
+
+例：部署gemini，变量填三个CODE/DEFAULT_MODEL(模型名称不能自己猜，去看设置的模型菜单里面有什么，比如我用的'gemini-1.5-flash-latest')/GOOGLE_API_KEY
+
 > 本项目大多数配置项都通过环境变量来设置，教程：[如何修改 Vercel 环境变量](./docs/vercel-cn.md)。
 
 ### `OPENAI_API_KEY` （必填项）
