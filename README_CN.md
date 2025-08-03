@@ -95,7 +95,11 @@ code1,code2,code3
 
 ### 个人部署经验
 
+#### 基础部署需要的变量
 例：部署gemini，变量填三个CODE/DEFAULT_MODEL(模型名称不能自己猜，去看设置的模型菜单里面有什么，比如我用的'gemini-1.5-flash-latest')/GOOGLE_API_KEY
+
+#### 如果部署的模型不是openai但需要用到'OPENAI_API_KEY'变量设置,，必须先用在'CUSTOM_MODELS'中用'-'注释掉默认的大模型，否则'DEFAULT_MODEL'选项无效。
+例：-gpt-4o-mini,+llama3-8b-8192(你要设置的默认模型,模型列表中没有才要+，否则只需-删除掉即可)
 
 > 本项目大多数配置项都通过环境变量来设置，教程：[如何修改 Vercel 环境变量](./docs/vercel-cn.md)。
 
@@ -255,7 +259,7 @@ DeepSeek Api Url.
 
 ### `DEFAULT_MODEL` （可选）
 
-更改默认模型，必须先用在'CUSTOM_MODELS'中用'-'注释掉默认的大模型，否则这个选项无效。例：-gpt-4o-mini,+你要设置的默认模型(模型列表中没有才要+，否则只需-删除掉即可)
+更改默认模型
 
 ### `VISION_MODELS` (可选)
 
